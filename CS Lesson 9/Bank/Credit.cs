@@ -25,6 +25,8 @@ internal class Credit
             if (value < 0)
                 throw new ArgumentException("Incorrect Amount !");
 
+
+
             amount = value;
         }
     }
@@ -67,7 +69,7 @@ internal class Credit
 
 
     public override string ToString()
-=> $@"ID: {Id}
+=> $@"Credit ID: {Id}
 
 Client: {_Client}
 Amount: {Amount} AZN

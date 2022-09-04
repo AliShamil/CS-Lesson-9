@@ -13,7 +13,7 @@ class Manager : Employee, IOrganize, IManager
 
 
 
-    public double calculateSalaries(List<Worker> workers)
+    public double calculateSalaries(List<Employee> workers)
     {
         double sum = 0;
 
@@ -30,4 +30,6 @@ class Manager : Employee, IOrganize, IManager
 
 
     public void organize() => Console.WriteLine("Manager Organize !");
+
+    public override void work() => Console.WriteLine("Manager Work !");
 }

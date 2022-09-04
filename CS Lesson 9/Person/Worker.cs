@@ -8,7 +8,7 @@ namespace CS_Lesson_9.Person;
 using CS_Lesson_9.Bank;
 using CS_Lesson_9.Interface;
 
-class Worker : Employee,IWorker
+class Worker : Employee
 {
     public TimeOnly StartTime { get; set; }
     public TimeOnly EndTime { get; set; }
@@ -40,7 +40,8 @@ class Worker : Employee,IWorker
             Console.WriteLine(op);
         }
     }
-    public void work() => Console.WriteLine("Worker work!");
+
+    public override void work() => Console.WriteLine("Worker Work !");
 
     public override string ToString()
 => @$"{base.ToString()}

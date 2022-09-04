@@ -21,5 +21,5 @@ class CEO : Employee, ICEO, IOrganize,IWorker
 
     public void makeMeeting() => Console.WriteLine("CEO make meeting!");
 
-    public void work() => Console.WriteLine("CEO Work!");
+    public override void work() => Console.WriteLine("CEO Work!");
 }

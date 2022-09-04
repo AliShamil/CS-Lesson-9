@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CS_Lesson_9.Person;
-
-abstract class Employee : Person
+using CS_Lesson_9.Interface;
+abstract class Employee : Person,IWorker
 {
     private string? position;
     private double salary;
@@ -45,6 +45,9 @@ abstract class Employee : Person
         Position=position;
         Salary=salary;
     }
+
+
+    public virtual void work() => Console.WriteLine("Work!");
 
     public override string ToString()
     => $@"{base.ToString()}

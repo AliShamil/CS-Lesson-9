@@ -20,7 +20,7 @@ interface IWorker
 
 interface IManager
 {
-    double calculateSalaries(List<Worker> workers);
+    double calculateSalaries(List<Employee> workers);
 }
 
 interface IOrganize
